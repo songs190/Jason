@@ -83,3 +83,18 @@ low, high = get_boundaries(100, 20)
 
 print("Low limit: "+str(low)+", high limit: "+str(high))
 # Also don't forget adding str(), otherwise it will give an error
+
+
+
+def create_special_string(special_item):
+    return "Our special is " + special_item + "."
+print(create_special_string("berries"))
+
+
+
+current_year = 2019
+def lifting_years(start_year):
+    experience = current_year - start_year
+    return experience
+
+print("I have lifted for " + str(lifting_years(2013)) + " years.")
