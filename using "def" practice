@@ -1,0 +1,40 @@
+def function(x):
+    print(x * 3 + 3)
+
+function(5)
+
+def function(x):
+    print(pow(3, x))
+function(10)
+
+def function(a, x, y):
+    print(a * x + y)
+function(5, 4, 1)
+
+def function(x, y, z, t):
+    print(pow(x, y) / (z + t))
+function(5, 2, 3, 2)
+
+
+#1
+def greet_customer(grocery_store, special_item, deal):
+    print("Hi, we are " + grocery_store + "!")
+    print("we have " + special_item + " today.")
+    print("it is " + deal + ".")
+greet_customer("costco", "blueberries", "buy one get one free")
+# DONT FORGET TO ADD "" PAY ATTENTION TO THE SMALL DETAILS.
+
+#2
+greet_customer(deal="buy one get one free", grocery_store="costco", special_item="blueberries")
+
+#3
+def greet_customer(grocery_store = "costco", special_item = "blue berries", deal = "buy one get one free"):
+    print("Hi, we are " + grocery_store + "!")
+    print("we have " + special_item + " today.")
+    print("it is " + deal + ".")
+greet_customer()
+
+# ALL 3 OF THEM PRINT SAME RESULT.
+
+def create_spreadsheet(title, row_count=1000):
+    print("Creating a spreadsheet called " + title + " with " + str(row_count) + " rows.")
